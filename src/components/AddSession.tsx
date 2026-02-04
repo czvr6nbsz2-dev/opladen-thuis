@@ -55,7 +55,7 @@ export default function AddSession({ sessions, settings, onAdd }: AddSessionProp
     return (
       <button
         onClick={() => setStep('choose')}
-        className="w-full py-4 px-6 bg-green-600 text-white text-lg font-semibold rounded-2xl shadow-lg active:bg-green-700 active:scale-[0.98] transition-transform"
+        className="w-full py-4 px-6 bg-cyan-500 text-white text-lg font-semibold rounded-2xl shadow-lg active:bg-cyan-600 active:scale-[0.98] transition-transform"
       >
         + Oplaadsessie toevoegen
       </button>
@@ -70,7 +70,7 @@ export default function AddSession({ sessions, settings, onAdd }: AddSessionProp
         </h3>
         <button
           onClick={handleFullSession}
-          className="w-full py-3.5 px-4 bg-green-600 text-white font-medium rounded-xl active:bg-green-700"
+          className="w-full py-3.5 px-4 bg-cyan-500 text-white font-medium rounded-xl active:bg-cyan-600"
         >
           Ja, 100%
         </button>
@@ -114,7 +114,7 @@ export default function AddSession({ sessions, settings, onAdd }: AddSessionProp
             value={percentage}
             onChange={e => setPercentage(e.target.value)}
             onKeyDown={e => e.key === 'Enter' && isValid && handlePartialSubmit()}
-            className="w-full py-3 px-4 pr-10 border border-gray-300 rounded-xl text-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500"
+            className="w-full py-3 px-4 pr-10 border border-gray-300 rounded-xl text-lg focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400"
           />
           <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 text-lg">%</span>
         </div>
@@ -133,7 +133,7 @@ export default function AddSession({ sessions, settings, onAdd }: AddSessionProp
           <button
             onClick={handlePartialSubmit}
             disabled={!isValid}
-            className="flex-1 py-3 px-4 rounded-xl bg-green-600 text-white font-medium active:bg-green-700 disabled:opacity-40 disabled:active:bg-green-600"
+            className="flex-1 py-3 px-4 rounded-xl bg-cyan-500 text-white font-medium active:bg-cyan-600 disabled:opacity-40 disabled:active:bg-cyan-500"
           >
             Opslaan
           </button>
