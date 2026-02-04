@@ -43,7 +43,7 @@ function App() {
   return (
     <div className="flex flex-col h-full max-w-lg mx-auto">
       {/* Header */}
-      <header className="bg-green-600 text-white px-5 pt-12 pb-4 safe-area-top">
+      <header className="bg-[#2B4570] text-white px-5 pt-12 pb-4 safe-area-top">
         <h1 className="text-xl font-bold">Opladen Thuis</h1>
       </header>
 
@@ -134,7 +134,7 @@ function TabButton({
     <button
       onClick={onClick}
       className={`flex-1 flex flex-col items-center py-2 pt-3 ${
-        active ? 'text-green-600' : 'text-gray-400'
+        active ? 'text-cyan-500' : 'text-gray-400'
       }`}
     >
       {icon}

@@ -46,7 +46,7 @@ export default function Settings({
               inputMode="decimal"
               value={tarief}
               onChange={e => setTarief(e.target.value)}
-              className="w-full py-3 pl-9 pr-4 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500"
+              className="w-full py-3 pl-9 pr-4 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400"
             />
           </div>
         </div>
@@ -61,7 +61,7 @@ export default function Settings({
               inputMode="decimal"
               value={kWh}
               onChange={e => setKWh(e.target.value)}
-              className="w-full py-3 px-4 pr-14 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500"
+              className="w-full py-3 px-4 pr-14 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-cyan-400"
             />
             <span className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400">kWh</span>
           </div>
@@ -69,7 +69,7 @@ export default function Settings({
 
         <button
           onClick={handleSave}
-          className="w-full py-3 px-4 bg-green-600 text-white font-medium rounded-xl active:bg-green-700"
+          className="w-full py-3 px-4 bg-cyan-500 text-white font-medium rounded-xl active:bg-cyan-600"
         >
           {saved ? 'Opgeslagen!' : 'Opslaan'}
         </button>

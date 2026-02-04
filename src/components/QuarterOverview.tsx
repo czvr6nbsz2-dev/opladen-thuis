@@ -34,17 +34,17 @@ export default function QuarterOverview({ sessions }: QuarterOverviewProps) {
 
 function QuarterCard({ summary, isCurrent }: { summary: QuarterSummary; isCurrent: boolean }) {
   return (
-    <div className={`bg-white rounded-xl p-4 shadow-sm ${isCurrent ? 'ring-2 ring-green-500' : ''}`}>
+    <div className={`bg-white rounded-xl p-4 shadow-sm ${isCurrent ? 'ring-2 ring-cyan-400' : ''}`}>
       <div className="flex items-center justify-between mb-3">
         <h3 className="font-semibold text-gray-900">
           {summary.label}
           {isCurrent && (
-            <span className="ml-2 text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full">
+            <span className="ml-2 text-xs bg-cyan-100 text-cyan-700 px-2 py-0.5 rounded-full">
               huidig
             </span>
           )}
         </h3>
-        <span className="text-lg font-bold text-green-700">
+        <span className="text-lg font-bold text-cyan-600">
           {formatBedrag(summary.totalBedrag)}
         </span>
       </div>
@@ -66,7 +66,7 @@ function TotalCard({ summaries }: { summaries: QuarterSummary[] }) {
   const totalBedrag = Math.round(summaries.reduce((a, s) => a + s.totalBedrag, 0) * 100) / 100;
 
   return (
-    <div className="bg-gray-900 text-white rounded-xl p-4 shadow-sm">
+    <div className="bg-[#1B2D4F] text-white rounded-xl p-4 shadow-sm">
       <div className="flex items-center justify-between mb-3">
         <h3 className="font-semibold">Totaal</h3>
         <span className="text-lg font-bold">{formatBedrag(totalBedrag)}</span>
