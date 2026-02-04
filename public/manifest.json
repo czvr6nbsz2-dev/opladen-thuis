@@ -1,0 +1,17 @@
+{
+  "name": "Opladen Thuis",
+  "short_name": "Opladen",
+  "description": "EV oplaadsessies bijhouden en declareren",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f9fafb",
+  "theme_color": "#16a34a",
+  "icons": [
+    {
+      "src": "./ev-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
